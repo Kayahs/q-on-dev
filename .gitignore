@@ -1,0 +1,23 @@
+# Ignore all files in current folder #
+/*
+!/wp-content/
+# Ignore everything in "wp-admin" #
+/wp-admin/*
+
+# Ignore everything in "wp-includes" #
+/wp-includes/*
+
+# Ignore everything in "wp-content" except these directories. #
+/wp-content/*
+!.gitignore
+!/wp-content/plugins/
+!/wp-content/themes/
+!/wp-content/uploads/
+!README.md
+# Ignore everything in "plugins" except certain plugins. #
+/wp-content/plugins/*
+# Ignore everything in "themes" except the active theme. #
+/wp-content/themes/*
+/wp-content/themes/quotesondev/
+# Ignore packages #
+/wp-content/themes/quotesondev/node_modules/
