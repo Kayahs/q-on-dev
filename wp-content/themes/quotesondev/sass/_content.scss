@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+.page {
+  .entry-title {
+    margin-top: 3rem;
+  }
+}
+
+.author-list, .category-list, .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1.125rem;
+  }
+}
+
+.archive {
+  .hentry {
+    border-bottom: 1px dotted #fff;
+  }
+  .page-title {
+    border-bottom: 1px dotted #fff;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.archive, .blog, .single {
+  .entry-content p {
+    font-size: 1.25rem;
+  }
+  .entry-title {
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0; 
+  }
+  .source {
+    display: inline;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+  .entry-meta {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative;
+    &:before {
+      content: "\f10d";
+      left: -175px;
+    }
+    &:after {
+      content: "\f10e";
+      right: -175px;
+    }
+    &:before, &:after {
+      color: #0c0;
+      font-family: FontAwesome;
+      font-size: 125px;
+      line-height: 125px;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .archive, .blog, .single {
+    .entry-content p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  .author-list, .category-list, .tag-list {
+    li {
+      font-size: 1.25rem;
+    }
+  }
+  .archive, .blog, .single {
+    .entry-content p {
+      font-size: 1.75rem;
+    }
+  }
+}
+

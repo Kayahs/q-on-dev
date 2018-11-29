@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 2px solid #0c0;
+	border-radius: 3px;
+	background-color: #222;
+	color: #0c0;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 0.75rem 2.25rem;
+
+	&:hover {
+		border-color: #090;
+		color: #090;
+	}
+
+	&:active,
+	&:focus {
+		border-color: #090;
+		color: #090;
+	}
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* Fields */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 2px solid #0c0;
+	border-radius: 3px;
+  background-color: $color__background-body;
+  margin-bottom: 1.5rem;
+  padding: .25rem .5rem;
+	&:focus {
+		color: #fcfcd2;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  width: 60% ;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+.submit-form {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+  }
+}
+.search-form {
+  label {
+    float: left;
+    min-width: 200px;
+  }
+  input[type="search"] {
+    width: 240px;
+  }
+}
+.search-submit {
+  border: 0;
+  float: left;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+#new-quote-button {
+  display: block;
+}
+
+@media (min-width: 620px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  textarea {
+    font-size: 1.25rem;
+  }
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  #new-quote-button {
+    margin:0 auto;
+  }
+}

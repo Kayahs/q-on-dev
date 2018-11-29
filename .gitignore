@@ -18,6 +18,6 @@
 /wp-content/plugins/*
 # Ignore everything in "themes" except the active theme. #
 /wp-content/themes/*
-/wp-content/themes/quotesondev/
+!/wp-content/themes/quotesondev/
 # Ignore packages #
 /wp-content/themes/quotesondev/node_modules/
